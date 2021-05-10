@@ -81,7 +81,7 @@
                                         .addClass('animate');
 
                                     if (chars.length === (key + 1)) {
-                                        // $this.removeClass('processing');
+                                        $this.removeClass('processing');
                                     }
 
                                     if (chars.length === (key + 1) && autoStop) {
