@@ -187,6 +187,17 @@
             });
 
 
+        $('.back-to-top')
+            .once()
+            .click(function () {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+
+                return false;
+            });
+
+
     }
 
 
