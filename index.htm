@@ -130,20 +130,66 @@
                 <div class="slider-block">
 
                     <div class="container">
-                        <div class="item">
 
-                            <!--
-                            для перенос текста используйте символ |
-                            -->
+                       <div class="owl-carousel">
+                           <div class="item">
+                               <div class="img">
+                                   <img src="./img/slide1.jpg" alt="">
+                               </div>
 
-                            <div class="text text-1"
-                                 data-text-animated
-                            >
-                                Бархатный сезон на байкале! |
-                                Уникальный маршрут: с юга на сервер
-                            </div>
+                               <!--
+                               для перенос текста используйте символ |
+                               -->
 
-                        </div>
+                               <div class="text-1"
+                                    data-text-animated
+                                    data-text-animated-auto-start
+                                    data-text-animated-auto-stop
+                                    data-text-animated-next="#slider-text-2"
+                               >
+                                   Бархатный сезон на байкале! |
+                                   Уникальный маршрут: с юга на сервер
+                               </div>
+
+                               <div class="text-2"
+                                    id="slider-text-2"
+                                    data-text-animated
+                                    data-text-animated-auto-stop
+                               >
+                                   Пример второго текста, который | автоматически появится после первого | и исчезнет
+                               </div>
+
+                               <div class="more">
+                                   <a href="#">Перейти</a>
+                               </div>
+
+                           </div>
+
+                           <div class="item">
+                               <div class="img">
+                                   <img src="./img/slide2.jpg" alt="">
+                               </div>
+
+                               <div class="text-1"
+                                    data-text-animated
+                                    data-text-animated-auto-start
+                                    data-text-animated-auto-stop
+                                    data-text-animated-next="#slider-text-3"
+                               >
+                                  Могучий и загадочный нил круиз | класса люкс!
+                               </div>
+
+                               <div class="text-2"
+                                    id="slider-text-3"
+                                    data-text-animated
+                                    data-text-animated-auto-stop
+                               >
+                                   Пример еще одного второго текста
+                               </div>
+
+                           </div>
+                       </div>
+
                     </div>
 
                 </div>
@@ -257,6 +303,7 @@
                         </div>
                     </div>
                     <div class="footer">
+                        <a href="#" class="back-to-top"></a>
                         <div class="inner container flex flex-middle">
                             <div class="copyright">
                                 <span>© Солеанс, 2021. Путешествуйте круизами</span> <a href="#">cruises.soleans.ru</a>
