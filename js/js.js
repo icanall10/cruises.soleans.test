@@ -160,6 +160,8 @@
                 items: 1,
                 dots: true,
                 nav: true,
+                autoplay: true,
+                autoplayTimeout: 10000, // 10 секунд
                 onInitialized: function (e) {
                     $(e.currentTarget)
                         .find('.owl-item.active')
@@ -193,6 +195,38 @@
                 $('body, html').animate({
                     scrollTop: 0
                 }, 500);
+
+                return false;
+            });
+
+
+        $('.header-block li.has-child > a')
+            .once()
+            .click(function () {
+                if (isTablet() || isMobile()) {
+                    let wrapper = $(this).closest('li');
+
+                    wrapper.toggleClass('open');
+
+                    wrapper
+                        .children('ul')
+                        .stop()
+                        .slideToggle('fast');
+
+                    return false;
+                }
+            });
+
+
+        $('.header-block .menu-link')
+            .once()
+            .click(function () {
+                $('body').toggleClass('menu-open');
+
+                $(this)
+                    .closest('.header-block')
+                    .find('.menu')
+                    .slideToggle('fast');
 
                 return false;
             });

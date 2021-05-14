@@ -3,13 +3,59 @@
     .only-desktop {
         display: none;
     }
-
     .only-tablet {
         display: none;
     }
-
     .only-mobile {
         display: block;
+    }
+
+    .only-tablet-or-desktop {
+        display: none;
+    }
+    .only-tablet-or-mobile {
+        display: block;
+    }
+
+    .container {
+        margin: 0 20px;
+    }
+    .container .container {
+        margin: 0;
+    }
+
+    .header-block .contacts {
+        padding: 8px 0;
+    }
+    .header-block .contacts .item {
+        margin: 0 0 5px;
+    }
+    .header-block .contacts .item:last-child {
+        margin-bottom: 0;
+    }
+
+    .header-block .contacts {
+        line-height: 1.5;
+    }
+
+    .footer-block .center {
+        padding: 30px 0;
+    }
+    .footer-block .center .column {
+        width: 100%;
+    }
+    .footer-block .footer .inner {
+        display: block;
+        padding: 40px 0 20px;
+    }
+    .footer-block .copyright {
+        margin-bottom: 10px;
+    }
+    .footer-block .footer .rate {
+        justify-content: flex-start;
+    }
+    .footer-block .footer .rate .item {
+        margin-left: 10px;
     }
 
 }

@@ -21,7 +21,7 @@
         return $.isFunction(fn) ? elements.each(fn) : elements;
     };
 
-    openFullscreen = function() {
+    openFullscreen = function () {
         var elem = document.documentElement;
 
         if (elem.requestFullscreen) {
@@ -35,7 +35,7 @@
         }
     }
 
-    closeFullscreen = function() {
+    closeFullscreen = function () {
         var elem = document.documentElement;
 
         if (document.exitFullscreen) {
@@ -48,5 +48,17 @@
             document.msExitFullscreen();
         }
     }
+
+    isDsktop = function () {
+        return $(window).width() > 1180;
+    };
+
+    isTablet = function () {
+        return ($(window).width() > 768 && $(window).width() <= 1180);
+    };
+
+    isMobile = function () {
+        return $(window).width() <= 768;
+    };
 
 })(jQuery);
